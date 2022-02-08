@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  background: rgba(167, 167, 167, 0.589);
+  font-family: 'Roboto';
+  font-size: 16px;
+}
+.card-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 320px;
+  height: 390px;
+  background-image: linear-gradient(
+    360deg,
+    rgba(34, 37, 214, 0.822),
+    rgb(17, 224, 17)
+  );
+  box-shadow: 0px 0.4px 20px 3px;
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+.card-container:hover {
+  transition: 0.5s ease;
+  background-image: linear-gradient(
+    360deg,
+    rgba(235, 235, 235, 0.507),
+    rgb(20, 20, 20)
+  );
+
+  width: 330px;
+  height: 410px;
+  padding: 5px;
+}
+
+.card-container:hover a {
+  color: black;
+}
+.card-container:hover .top {
+  background-image: url(./image/web2.PNG);
+  background-position: center;
+  background-size: cover;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.top {
+  background: rgb(20, 20, 20);
+  border-radius: 6px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  height: 130px;
+}
+
+.image {
+  background: url('./image/icone.jpg') center/cover;
+  margin-left: 50%;
+  position: relative;
+  bottom: -50%;
+  transform: translateX(-50%);
+  border: solid rgba(0, 0, 0, 0.856) 3px;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+}
+
+figure {
+  background: rgba(0, 0, 0, 0.432);
+  margin-left: 50%;
+  color: rgba(235, 235, 235, 0.678);
+  padding-top: 50px;
+  position: relative;
+  bottom: 15px;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+figure:hover {
+  transition: 0.7s;
+  opacity: 1;
+  cursor: pointer;
+}
+.bot {
+  margin-top: 40px;
+  padding: 20px;
+}
+.bot h3 {
+  line-height: 0.4;
+  font-size: 1.6rem;
+}
+.bot h4 {
+  line-height: 0.5;
+  font-size: 1.2rem;
+}
+.bot p {
+  color: rgba(0, 0, 0, 0.836);
+}
+.bot a {
+  font-size: 14px;
+  line-height: 0.7;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: solid black 2px;
+  border-radius: 12px;
+
+  padding: 7px;
+
+  color: rgba(255, 255, 255, 0.815);
+}
+.bot a:hover {
+  transition: 0.7s;
+  background: rgba(0, 0, 0, 0.856);
+  color: rgba(255, 255, 255, 0.884);
+}
